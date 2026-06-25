@@ -85,7 +85,6 @@ def main(text_column='text', target_column='target'):
         train_data = pd.read_csv('./data/raw/train.csv')
         test_data = pd.read_csv('./data/raw/test.csv')
         logger.debug('Data loaded properly')
-
         # Transform the data
         train_processed_data = preprocess_df(train_data, text_column, target_column)
         test_processed_data = preprocess_df(test_data, text_column, target_column)
